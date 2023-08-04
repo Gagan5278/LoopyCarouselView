@@ -9,4 +9,28 @@ A carousel example is written in SwiftUI, allowing to creation a loopy view when
 ### Youtube link:
 https://youtube.com/shorts/rTUDlbRVVQc?feature=share
 
-Screenshot:
+### Screenshot:
+![Screenshot](https://github.com/Gagan5278/LoopyCarouselView/assets/2304583/a178fb86-5543-4747-9d2a-427fd9b475d8)
+
+### How to use
+
+Drag and drop ImageCarouselView.swift file in your app. 
+
+In your ContentView
+
+```
+                GeometryReader{ geometry in
+                    ImageCarouselView(imageCount: 3,  activeIndex: $activeIndex, shouldLoop: true) {
+                     Image("First Image")
+                     Image("Second Image")
+                     Image("Third Image")
+                }
+            }
+            .frame(height: 200, alignment: .center)
+```
+
+In case you want to disable the loop, pass **_shouldLoop_** as **_false_**.
+
+**activeIndex** can be used to show the custom page control current index.
+
+### NOTE: Please download the code for more.
