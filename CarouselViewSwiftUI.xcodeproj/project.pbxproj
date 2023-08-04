@@ -14,6 +14,8 @@
 		5DCAAC952A7D39BE00D64002 /* CarouselViewSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAAC942A7D39BE00D64002 /* CarouselViewSwiftUITests.swift */; };
 		5DCAAC9F2A7D39BE00D64002 /* CarouselViewSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAAC9E2A7D39BE00D64002 /* CarouselViewSwiftUIUITests.swift */; };
 		5DCAACA12A7D39BE00D64002 /* CarouselViewSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAACA02A7D39BE00D64002 /* CarouselViewSwiftUIUITestsLaunchTests.swift */; };
+		5DCAACAE2A7D39D400D64002 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAACAD2A7D39D300D64002 /* ImageCarouselView.swift */; };
+		5DCAACB12A7D438700D64002 /* CarouselIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAACB02A7D438700D64002 /* CarouselIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		5DCAAC9A2A7D39BE00D64002 /* CarouselViewSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselViewSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCAAC9E2A7D39BE00D64002 /* CarouselViewSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewSwiftUIUITests.swift; sourceTree = "<group>"; };
 		5DCAACA02A7D39BE00D64002 /* CarouselViewSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DCAACAD2A7D39D300D64002 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		5DCAACB02A7D438700D64002 /* CarouselIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselIndicator.swift; sourceTree = "<group>"; };
+		5DCAACB72A7D4CF500D64002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,11 @@
 		5DCAAC822A7D39BD00D64002 /* CarouselViewSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				5DCAAC832A7D39BD00D64002 /* CarouselViewSwiftUIApp.swift */,
-				5DCAAC852A7D39BD00D64002 /* ContentView.swift */,
+				5DCAACB72A7D4CF500D64002 /* Info.plist */,
+				5DCAACB42A7D4CB000D64002 /* Resource */,
+				5DCAACB32A7D4C2B00D64002 /* View */,
+				5DCAACB22A7D4C1A00D64002 /* System */,
+				5DCAACAF2A7D437900D64002 /* Carousel */,
 				5DCAAC872A7D39BE00D64002 /* Assets.xcassets */,
 				5DCAAC892A7D39BE00D64002 /* Preview Content */,
 			);
@@ -125,6 +133,38 @@
 				5DCAACA02A7D39BE00D64002 /* CarouselViewSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = CarouselViewSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		5DCAACAF2A7D437900D64002 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				5DCAACAD2A7D39D300D64002 /* ImageCarouselView.swift */,
+				5DCAACB02A7D438700D64002 /* CarouselIndicator.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		5DCAACB22A7D4C1A00D64002 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5DCAAC832A7D39BD00D64002 /* CarouselViewSwiftUIApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		5DCAACB32A7D4C2B00D64002 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DCAAC852A7D39BD00D64002 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DCAACB42A7D4CB000D64002 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCAACAE2A7D39D400D64002 /* ImageCarouselView.swift in Sources */,
+				5DCAACB12A7D438700D64002 /* CarouselIndicator.swift in Sources */,
 				5DCAAC862A7D39BD00D64002 /* ContentView.swift in Sources */,
 				5DCAAC842A7D39BD00D64002 /* CarouselViewSwiftUIApp.swift in Sources */,
 			);
@@ -419,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CarouselViewSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarouselViewSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +490,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CarouselViewSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarouselViewSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
