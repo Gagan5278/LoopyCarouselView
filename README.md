@@ -7,7 +7,7 @@ A carousel example is written in SwiftUI, allowing to creation a loopy view when
  In order to do this, we can use HStack wrapped by ZStack and listen to drag gestures. 
 
 ### Youtube link:
-https://youtube.com/shorts/rTUDlbRVVQc?feature=share
+https://www.youtube.com/shorts/rTUDlbRVVQc
 
 ### Screenshot:
 ![Screenshot](https://github.com/Gagan5278/LoopyCarouselView/assets/2304583/a178fb86-5543-4747-9d2a-427fd9b475d8)
